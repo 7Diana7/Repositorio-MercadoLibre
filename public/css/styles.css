@@ -1,0 +1,275 @@
+input{
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #eac926;
+    padding-bottom: 10px;
+}
+header img{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 3%;
+    font-size: 150%;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    margin: 50px;
+    color: black;
+}
+nav .opciones div{
+    display: flex;
+    flex-direction: row;
+}
+nav .opciones div li{
+    margin: 0 20px;
+    font-size: 95%;
+    color: black;
+}
+nav .opciones form{
+    display: flex;
+    flex-direction: row;
+}
+nav .opciones form li{
+    margin: 0 20px;
+    font-size: 95%;
+    color: black;
+}
+
+p, li,h1,h3, h4, h5,a,b{font-family: 'Roboto', sans-serif; color: #666;}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav .bar i {
+    font-size: 35px;
+    color: #ebebeb;
+    background-color: #1259c3;
+    padding: 20px;
+    border-radius: 15%;
+}
+header .busqueda{
+    font-size: 200%;
+    height: 50%;
+}
+header .busqueda input{
+    padding: 5%;
+    font-size: 120%;
+    width: 35vw;
+}
+.bar {
+    align-self: center;
+}
+nav{
+    background-color: #eac926;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1%;
+}
+main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section div img {
+    width: 85vw;
+    border-bottom:solid 2px #ebebeb;
+}
+
+main section div h3 {display: none;}
+
+main h1 {
+    align-self: flex-start;
+    margin-left: 5%;
+    font-size: 450%;
+}
+main section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    align-items: center;
+}
+.descuento{
+    font-size: 1.7rem;
+    color: #39b54a;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 35px;
+    margin: 20px;
+    border-radius: 15px;
+}
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer ul i {
+    font-size: 5rem; 
+    align-self: center;
+    color: #1259c3;
+    margin: 5%;
+    transition: color 450ms;
+}
+footer div div ul i:hover{
+    color: #0683F4;
+}
+footer ul h4{
+    align-self: center;
+    font-size: 130%;
+}
+footer ul li{align-self: center;}
+
+footer ul li{align-self: center;}
+
+.descripciones{
+    font-size: 16px;
+}
+.banners{
+    width: 100vw;
+    margin-top: 10px;
+}
+main section div i {
+    font-size: 2rem;
+    color: #39b54a;
+    margin: 15px;
+    padding: 15px;
+    border:solid 2px #39b54a;
+    border-radius: 50%;
+    align-self: flex-end;
+    transition: text 450ms;
+}
+main section div i:hover {
+    animation: rotando 2s infinite;
+}
+@keyframes rotando{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    align-items: center;
+}
+main form input{
+    padding: 15%;
+    margin: 20px 0;
+    width: 270%;
+    font-size: 140%;
+}
+main form button{
+    color: white;
+    background-color: #1259c3;
+    padding: 10%;
+    width: 300%;
+    font-size: 200%;
+}
+main section div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+main section div .base-producto{
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+}
+main section div .descripcion-producto{
+    background-color: white;
+    box-shadow: none;
+    padding: 0 25px;
+    position: relative;
+    bottom: 260px;
+    transition: bottom 450ms;
+}
+.descripcion-producto:hover{
+    bottom: 20px;
+}
+footer{
+    background-color: #ebebeb;
+    padding: 20px; 
+}
+/*Media queries*/
+@media (min-width: 320px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    nav ul {
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 3%;
+        font-size: 150%;
+    }
+    nav .bar{
+        display: none;
+    }
+    main section div h3{
+        display: flex;
+        color: #666;
+        font-size: 200%;
+    }
+    main section div p{
+        font-size: 1.7rem;
+    }
+    footer div div ul i{
+        font-size: 8rem; 
+    }
+}
+@media (min-width: 1024px){
+    header img{
+        width: 25%;
+    }
+    header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer div div{
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1440px){
+    nav .opciones div li{
+        font-size: 110%;
+    }
+    nav .opciones form li{
+        font-size: 110%;
+    }
+}
